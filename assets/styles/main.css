@@ -135,3 +135,71 @@ a:hover{
 .blue_button:hover{
     cursor: pointer;
 }
+
+#road_img{
+    height:auto;
+    width: auto;
+    margin-top:25px;
+    margin-bottom: 25px;
+}
+
+#wallet_img{
+    height:auto;
+    width: auto;
+    margin-top:25px;
+    margin-bottom: 25px;
+}
+
+input{
+    -webkit-appearance: none;
+    border:0;
+    border-radius: 16px;
+    background-color: #EDEDED;
+    color: #054752;
+    flex: 1;
+    padding: 16px 0px 16px 16px;
+    margin-right: 48px;
+    width:100%
+}
+
+.grey_line{
+    border-bottom: 2px solid #EDEDED;
+    margin: 20px 0px 20px 0px;
+}
+
+.ticket_number{
+    background-color: #fff;
+    color: #00AFF5;
+    text-decoration: none;
+    text-align: center;
+    height: 26px;
+    width:45px;
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid rgb(190, 190, 190);
+    margin-left:25px;
+    margin-top:5px;
+}
+
+.ticket_number:hover{
+    cursor:pointer;
+    color: #fff;
+    background-color: #00AFF5;
+}
+
+#lessPriceButton{
+    background: url("../img/minus.png") no-repeat;
+    cursor: pointer;
+    border:none;
+    width:30px;
+    height:30px;
+}
+
+
+#morePriceButton{
+    background: url("../img/plus.png") no-repeat;
+    cursor: pointer;
+    border:none;
+    width:30px;
+    height:30px;
+}
