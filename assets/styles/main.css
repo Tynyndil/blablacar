@@ -1,0 +1,143 @@
+/* DIVERS */
+.padding{
+    padding:10px;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.center{
+    text-align: center;
+}
+
+.bottom{
+    position:absolute;
+    bottom:0;
+    right:0;
+    margin-bottom:0;
+}
+
+.majuscule{
+    text-transform: uppercase;
+}
+
+.show_mobile{
+    display: none;
+}
+
+.hide_mobile{
+    display: block;
+}
+
+.show_mobile_2x{
+    display: none;
+}
+
+.hide_mobile_2x{
+    display: block;
+}
+
+.hide_all_mobiles{
+    display: block;
+}
+
+.no_wrap{
+    white-space:nowrap;
+}
+
+.inline{
+    display: inline;
+}
+
+.fill_screen{
+    height: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+    
+
+/*** TAILLE FONT ***/
+.t0533 { font-size: 0.533em; } /* 6px */
+.t0600 { font-size: 0.600em; } /* 7px */
+.t0750 { font-size: 0.750em; } /* 9px */
+.t0833 { font-size: 0.833em; } /* 10px */
+.t0966 { font-size: 0.966em; } /* 11px */
+.t1000 { font-size: 1em;  } /* 12px */
+.t1083 { font-size: 1.083em; } /* 13px */
+.t1167 { font-size: 1.167em; } /* 14px */
+.t1250 { font-size: 1.250em; } /* 15px */
+.t1333 { font-size: 1.333em; } /* 16px */
+.t1417 { font-size: 1.417em; } /* 17px */
+.t1500 { font-size: 1.500em; } /* 18px */
+.t1583 { font-size: 1.583em; } /* 19px */
+.t1667 { font-size: 1.667em; } /* 20px */
+.t1750 { font-size: 1.750em; } /* 21px */
+.t1833 { font-size: 1.833em; } /* 22px */
+.t1875 { font-size: 1.875em; } /* 23px */
+.t2000 { font-size: 2.000em; } /* 24px */
+.t2500 { font-size: 2.500em; } /* 30px */
+
+/*** ESPACEMENTS HORIZONTAUX ***/
+[class*="clear"] {
+    clear: both;
+}
+
+.clear2 { height: 2px; }
+.clear5 { height: 5px; }
+.clear10 { height: 10px; }
+.clear15 { height: 15px; }
+.clear20 { height: 20px; }
+.clear25 { height: 25px; }
+.clear30 { height: 30px; }
+.clear40 { height: 40px; }
+.clear50 { height: 50px; }
+.clear80 { height: 80px; }
+.clear100 { height: 100px; }
+.clear200 { height: 200px; }
+
+/* COLORS */
+
+
+/* MAIN */
+html{
+    background-color: #EDEDED;
+}
+
+body{
+    background-color: #EDEDED;
+    font-family: gt-eesti,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+a{
+    color: #00AFF5;
+}
+
+a:hover{
+    color: #08c;
+    text-decoration: none;
+}
+
+.page{
+    background-color: white;
+    width:990px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#header{
+    line-height: 71px;
+    font-size:16p;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#head_image img{
+    height: 32px;
+    width: 162px;
+}
