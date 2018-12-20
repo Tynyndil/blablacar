@@ -47,6 +47,7 @@
                     <div class="col-1 t2000 blue_sky"><button id="lessPriceButton" class="right"></button></div>
                     <div class="col-2 center blue_sky bold"><span id="ticketPrice">13</span>,00€</div>
                     <div class="col-1 t2000 blue_sky"><button id="morePriceButton" class="left"></button></div>
+                    <div class="col-6 center">Valeur actuelle de vos billets : </div>
                 </div>
 
                 <div class="grey_line"></div>

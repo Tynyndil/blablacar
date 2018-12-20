@@ -142,9 +142,9 @@
                 Nombre de tickets désirés
 
                 <div class="row">
-                    <button class="ticket_number">5</button>
-                    <button class="ticket_number">10</button>
-                    <button class="ticket_number">20</button>
+                    <button id="5" class="ticket_number" onClick="ticketNumberSelection(this.id)">5</button>
+                    <button id="10" class="ticket_number" onClick="ticketNumberSelection(this.id)">10</button>
+                    <button id="20" class="ticket_number" onClick="ticketNumberSelection(this.id)">20</button>
                 </div>
 
                 <div class="grey_line"></div>
@@ -152,12 +152,13 @@
                 <div class="row">
                     <div class="col-3">
                         Récapitulatif<br/>
-                        <span class="blue_sky" style="border-bottom: 1px solid #EDEDED;">? x ?</span><br/>
-                        <span class="blue_sky bold">?</span>
+                        <span class="blue_sky" style="border-bottom: 1px solid #EDEDED;">
+                            <span id="priceCalculation">?</span> € x <span id="numberCalculation">?</span></span><br/>
+                        <span id="totalPrice" class="blue_sky bold">?</span> €
                     </div>
                     <div class="col-3">&nbsp</div>
                     <div class="col-6">Un seul de ces tickets permet d'effectuer n'importe quel trajet, à condition 
-                        que son prix soit de ? € maximum
+                        que son prix soit de <span id="maxPrice">? </span>€ maximum
                     </div>
                 </div>
 
