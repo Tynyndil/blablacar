@@ -31,74 +31,74 @@ function loadWalletCase(){
 // Wallet JS
 // Click on less button for the prixe
 function reduceTicketPrice(){
-    var currentPrice = parseInt(document.querySelector("#ticketPrice").innerHTML);
+    var currentPrice = parseInt(document.querySelector("#walletTicketPrice").innerHTML);
     currentPrice -= 1;
-    document.querySelector("#ticketPrice").innerHTML = currentPrice;
-    document.querySelector("#maxPrice").innerHTML = currentPrice;
+    document.querySelector("#walletTicketPrice").innerHTML = currentPrice;
+    document.querySelector("#maxWalletPrice").innerHTML = currentPrice;
 
-    var priceCalculation = document.querySelector("#priceCalculation");
-    var tickets = document.querySelector("#numberCalculation");
+    var walletPriceCalculation = document.querySelector("#walletPriceCalculation");
+    var tickets = document.querySelector("#walletNumberCalculation");
 
-    priceCalculation.innerHTML = currentPrice;
+    walletPriceCalculation.innerHTML = currentPrice;
     
     // Calculate final price
-    if(priceCalculation.innerHTML != "?" && tickets != "?"){
-        var finalPrice = parseInt(priceCalculation.innerHTML) + parseInt(tickets.innerHTML);
-        document.querySelector("#totalPrice").innerHTML = finalPrice;
+    if(walletPriceCalculation.innerHTML != "?" && tickets != "?"){
+        var finalPrice = parseInt(walletPriceCalculation.innerHTML) + parseInt(tickets.innerHTML);
+        document.querySelector("#totalWalletPrice").innerHTML = finalPrice;
     }
 
 }
 
 // CLick on plus button for the price
 function increaseTicketPrice(){
-    var currentPrice = parseInt(document.querySelector("#ticketPrice").innerHTML);
+    var currentPrice = parseInt(document.querySelector("#walletTicketPrice").innerHTML);
     currentPrice += 1;
-    document.querySelector("#ticketPrice").innerHTML = currentPrice;
-    document.querySelector("#maxPrice").innerHTML = currentPrice;
+    document.querySelector("#walletTicketPrice").innerHTML = currentPrice;
+    document.querySelector("#maxWalletPrice").innerHTML = currentPrice;
 
-    var priceCalculation = document.querySelector("#priceCalculation");
-    var tickets = document.querySelector("#numberCalculation");
+    var walletPriceCalculation = document.querySelector("#walletPriceCalculation");
+    var tickets = document.querySelector("#walletNumberCalculation");
 
-    priceCalculation.innerHTML = currentPrice;
+    walletPriceCalculation.innerHTML = currentPrice;
     
     // Calculate final price
-    if(priceCalculation.innerHTML != "?" && tickets.innerHTML != "?"){
-        var finalPrice = parseInt(priceCalculation.innerHTML) * parseInt(tickets.innerHTML);
-        document.querySelector("#totalPrice").innerHTML = finalPrice;
+    if(walletPriceCalculation.innerHTML != "?" && tickets.innerHTML != "?"){
+        var finalPrice = parseInt(walletPriceCalculation.innerHTML) * parseInt(tickets.innerHTML);
+        document.querySelector("#totalWalletPrice").innerHTML = finalPrice;
     }
 }
 
-function ticketNumberSelection(numberOfTicket){
-    document.getElementById(numberOfTicket).classList.toggle("ticket_number_selected");
+function walletTicketNumberSelection(numberOfTicket){
+    document.getElementById(numberOfTicket).classList.toggle("walletTicketNumberSelected");
     
     if(numberOfTicket == 5){
-        document.getElementById("10").classList.remove("ticket_number_selected");
-        document.getElementById("20").classList.remove("ticket_number_selected");
+        document.getElementById("10").classList.remove("walletTicketNumberSelected");
+        document.getElementById("20").classList.remove("walletTicketNumberSelected");
     }else if(numberOfTicket == 10){
-        document.getElementById("5").classList.remove("ticket_number_selected");
-        document.getElementById("20").classList.remove("ticket_number_selected");
+        document.getElementById("5").classList.remove("walletTicketNumberSelected");
+        document.getElementById("20").classList.remove("walletTicketNumberSelected");
     }else if(numberOfTicket == 20){
-        document.getElementById("5").classList.remove("ticket_number_selected");
-        document.getElementById("10").classList.remove("ticket_number_selected");
+        document.getElementById("5").classList.remove("walletTicketNumberSelected");
+        document.getElementById("10").classList.remove("walletTicketNumberSelected");
     }
 
-    var priceCalculation = document.querySelector("#priceCalculation");
-    var tickets = document.querySelector("#numberCalculation");
+    var walletPriceCalculation = document.querySelector("#walletPriceCalculation");
+    var tickets = document.querySelector("#walletNumberCalculation");
 
     tickets.innerHTML = numberOfTicket;
 
     // Calculate final price
-    if(priceCalculation.innerHTML != "?" && tickets.innerHTML != "?"){
-        var finalPrice = parseInt(priceCalculation.innerHTML) * parseInt(tickets.innerHTML);
-        document.querySelector("#totalPrice").innerHTML = finalPrice;
+    if(walletPriceCalculation.innerHTML != "?" && tickets.innerHTML != "?"){
+        var finalPrice = parseInt(walletPriceCalculation.innerHTML) * parseInt(tickets.innerHTML);
+        document.querySelector("#totalWalletPrice").innerHTML = finalPrice;
     }
 }
 
 function buyWalletTicket(){
-    var tickets = document.querySelector("#numberCalculation");
-    var ticketPrice = document.querySelector("#priceCalculation");
+    var tickets = document.querySelector("#walletNumberCalculation");
+    var ticketPrice = document.querySelector("#walletPriceCalculation");
 
-    if(document.querySelector("#totalPrice").innerHTML != "?"){
+    if(document.querySelector("#totalWalletPrice").innerHTML != "?"){
         sessionStorage.setItem("userTicketNumber", parseInt(tickets.innerHTML));
         sessionStorage.setItem("userTicketPrice", parseInt(ticketPrice.innerHTML));
     }else{
