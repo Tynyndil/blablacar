@@ -81,8 +81,8 @@
                     <img id="road_img" src="assets/img/route.png" alt="Trajet"><br/>
                 </div>
                 
-                <input type="text" placeholder="Départ" class="startPoint">
-                <input type="text" placeholder="Destination" style="margin-top:10px;" class="arrivalPoint">
+                <input type="text" placeholder="Départ" class="startPoint blablaInput">
+                <input type="text" placeholder="Destination" style="margin-top:10px;" class="arrivalPoint blablaInput">
 
                 <div class="grey_line"></div>
 
