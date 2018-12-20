@@ -179,10 +179,18 @@ input{
     border: 1px solid rgb(190, 190, 190);
     margin-left:25px;
     margin-top:5px;
+    outline: none;
 }
 
 .ticket_number:hover{
     cursor:pointer;
+    color: #fff;
+    background-color: #00AFF5;
+}
+
+.ticket_number:focus {outline:0;}
+
+.ticket_number_selected{
     color: #fff;
     background-color: #00AFF5;
 }
