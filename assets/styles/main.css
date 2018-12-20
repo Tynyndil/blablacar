@@ -167,7 +167,7 @@ input{
     margin: 20px 0px 20px 0px;
 }
 
-.ticket_number{
+.walletTicketNumber{
     background-color: #fff;
     color: #00AFF5;
     text-decoration: none;
@@ -182,15 +182,15 @@ input{
     outline: none;
 }
 
-.ticket_number:hover{
+.walletTicketNumber:hover{
     cursor:pointer;
     color: #fff;
     background-color: #00AFF5;
 }
 
-.ticket_number:focus {outline:0;}
+.walletTicketNumber:focus {outline:0;}
 
-.ticket_number_selected{
+.walletTicketNumberSelected{
     color: #fff;
     background-color: #00AFF5;
 }
