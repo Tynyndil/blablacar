@@ -1,4 +1,4 @@
-document.querySelector("#trajectButton").addEventListener("click", loadTrajectCase)
+document.querySelector("#trajectButton").addEventListener("click", loadTrajectCase);
 
 function loadTrajectCase(){
     var mainContent = document.querySelector("#main");
