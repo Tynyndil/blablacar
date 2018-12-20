@@ -78,6 +78,18 @@
     color: #00AFF5;
 }
 
+.backgroundGrey{
+    -webkit-appearance: none;
+    border:0;
+    border-radius: 16px;
+    background-color: #EDEDED;
+    color: #054752;
+    flex: 1;
+    padding: 16px;
+    margin-right: 48px;
+    width:100%
+}
+
 /* MAIN */
 html{
     background-color: #EDEDED;
@@ -150,7 +162,7 @@ a:hover{
     margin-bottom: 25px;
 }
 
-input{
+.blablaInput{
     -webkit-appearance: none;
     border:0;
     border-radius: 16px;
@@ -228,4 +240,19 @@ input{
     border:none;
     width:15px;
     height:15px;
+}
+
+.annonce{
+    border: 1px solid #DDD;
+    border-radius: 16px;
+    list-style-type: none;
+    display: block;
+    padding: 16px;
+}
+
+.userImage{
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    object-fit:cover;
 }
