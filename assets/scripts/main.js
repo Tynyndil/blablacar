@@ -1,3 +1,33 @@
+document.querySelector("#trajectButton").addEventListener("click", loadTrajectCase);
+let startPointInput = document.querySelector('.startPoint');
+let arrivalPointInput = document.querySelector('.arrivalPoint');
+
+document.addEventListener(
+    'keypress',
+    ()=>{
+        const tempStartInput = document.querySelector('.startPoint');
+        if(tempStartInput.value.length > 0){
+            startPointInput = document.querySelector('.startPoint'); 
+            startPointInput.value = "Paris";
+            startPointInput.value.substring(1, startPointInput.value.length);
+        }
+
+        const tempArrivalInput = document.querySelector('.arrivalPoint');
+        if(tempArrivalInput.value.length > 0){
+            arrivalPointInput = document.querySelector('.arrivalPoint'); 
+            arrivalPointInput.value = "Orléans";
+            arrivalPointInput.value.substring(1, arrivalPointInput.value.length);
+        }
+    }
+);
+
+arrivalPointInput.addEventListener(
+    'keypress',
+    ()=>{
+        arrivalPointInput = document.querySelector('.startPoint'); 
+        arrivalPointInput.value = "Orléans";
+    }
+);
 if(sessionStorage.getItem("userTicketPrice")){
     alert("Vous avez déja acheté " 
             + sessionStorage.getItem("userTicketNumber") 
