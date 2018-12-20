@@ -154,7 +154,7 @@
                         Récapitulatif<br/>
                         <span class="blue_sky" style="border-bottom: 1px solid #EDEDED;">
                             <span id="priceCalculation">?</span> € x <span id="numberCalculation">?</span></span><br/>
-                        <span id="totalPrice" class="blue_sky bold">?</span> €
+                        <span class="blue_sky bold"><span id="totalPrice">?</span> €</span>
                     </div>
                     <div class="col-3">&nbsp</div>
                     <div class="col-6">Un seul de ces tickets permet d'effectuer n'importe quel trajet, à condition 
@@ -164,7 +164,7 @@
 
                 <div class="grey_line"></div>
 
-                <div class="center"><button class="blue_button">Acheter mes tickets</button></div>
+                <div class="center"><button id="buyTicket" class="blue_button">Acheter mes tickets</button></div>
             </div>
 
             <div class="col-3">&nbsp</div>

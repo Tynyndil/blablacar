@@ -1,3 +1,12 @@
+if(sessionStorage.getItem("userTicketPrice")){
+    alert("Vous avez déja acheté " 
+            + sessionStorage.getItem("userTicketNumber") 
+            + " tickets d'une valeur de " 
+            + sessionStorage.getItem("userTicketPrice") + " €, clear du sessionStorage");
+
+    sessionStorage.clear();
+}
+
 document.querySelector("#trajectButton").addEventListener("click", loadTrajectCase);
 
 function loadTrajectCase(){
@@ -8,6 +17,7 @@ function loadTrajectCase(){
 
 document.querySelector("#walletButton").addEventListener("click", loadWalletCase);
 
+// Loading wallet case
 function loadWalletCase(){
     var mainContent = document.querySelector("#main");
     var trajectContent = document.querySelector("#walletCase");
@@ -15,8 +25,11 @@ function loadWalletCase(){
 
     document.querySelector("#lessPriceButton").addEventListener("click", reduceTicketPrice);
     document.querySelector("#morePriceButton").addEventListener("click", increaseTicketPrice);
+    document.querySelector("#buyTicket").addEventListener("click", buyWalletTicket);
 }
 
+// Wallet JS
+// Click on less button for the prixe
 function reduceTicketPrice(){
     var currentPrice = parseInt(document.querySelector("#ticketPrice").innerHTML);
     currentPrice -= 1;
@@ -28,6 +41,7 @@ function reduceTicketPrice(){
 
     priceCalculation.innerHTML = currentPrice;
     
+    // Calculate final price
     if(priceCalculation.innerHTML != "?" && tickets != "?"){
         var finalPrice = parseInt(priceCalculation.innerHTML) + parseInt(tickets.innerHTML);
         document.querySelector("#totalPrice").innerHTML = finalPrice;
@@ -35,6 +49,7 @@ function reduceTicketPrice(){
 
 }
 
+// CLick on plus button for the price
 function increaseTicketPrice(){
     var currentPrice = parseInt(document.querySelector("#ticketPrice").innerHTML);
     currentPrice += 1;
@@ -46,8 +61,8 @@ function increaseTicketPrice(){
 
     priceCalculation.innerHTML = currentPrice;
     
+    // Calculate final price
     if(priceCalculation.innerHTML != "?" && tickets.innerHTML != "?"){
-        console.log("On peut calculer le prix final");
         var finalPrice = parseInt(priceCalculation.innerHTML) * parseInt(tickets.innerHTML);
         document.querySelector("#totalPrice").innerHTML = finalPrice;
     }
@@ -72,11 +87,21 @@ function ticketNumberSelection(numberOfTicket){
 
     tickets.innerHTML = numberOfTicket;
 
+    // Calculate final price
     if(priceCalculation.innerHTML != "?" && tickets.innerHTML != "?"){
-        console.log("On peut calculer le prix final");
         var finalPrice = parseInt(priceCalculation.innerHTML) * parseInt(tickets.innerHTML);
         document.querySelector("#totalPrice").innerHTML = finalPrice;
     }
 }
 
+function buyWalletTicket(){
+    var tickets = document.querySelector("#numberCalculation");
+    var ticketPrice = document.querySelector("#priceCalculation");
 
+    if(document.querySelector("#totalPrice").innerHTML != "?"){
+        sessionStorage.setItem("userTicketNumber", parseInt(tickets.innerHTML));
+        sessionStorage.setItem("userTicketPrice", parseInt(ticketPrice.innerHTML));
+    }else{
+        alert("Erreur lors de l'achat des tickets")
+    }
+}
