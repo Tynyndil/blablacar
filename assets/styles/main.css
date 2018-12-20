@@ -203,3 +203,21 @@ input{
     width:30px;
     height:30px;
 }
+
+#price_needed #lessPriceButton{
+    background: url("../img/minus.png") no-repeat;
+    background-size: 15px 15px;
+    cursor: pointer;
+    border:none;
+    width:15px;
+    height:15px;
+}
+
+#price_needed #morePriceButton{
+    background: url("../img/plus.png") no-repeat;
+    background-size: 15px 15px;
+    cursor: pointer;
+    border:none;
+    width:15px;
+    height:15px;
+}
