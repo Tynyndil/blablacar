@@ -86,7 +86,7 @@
 
                 <div class="grey_line"></div>
 
-                <span id="price_sentence">Prix moyen d'un trajet ?/?<span><br/>
+                <span id="price_sentence">Prix moyen d'un trajet ?/?</span><br/>
                 <span id="price">? €</span>
 
                 <div class="grey_line"></div>

@@ -1,6 +1,10 @@
 document.querySelector("#trajectButton").addEventListener("click", loadTrajectCase);
+
 let startPointInput = document.querySelector('.startPoint');
 let arrivalPointInput = document.querySelector('.arrivalPoint');
+let prixMoyen = document.querySelector('#price');
+let trajetLieux = document.querySelector('#price_sentence');
+
 
 document.addEventListener(
     'keypress',
@@ -18,16 +22,19 @@ document.addEventListener(
             arrivalPointInput.value = "Orléans";
             arrivalPointInput.value.substring(1, arrivalPointInput.value.length);
         }
+
+        if(startPointInput.value.lastIndexOf("Paris") != -1 && arrivalPointInput.value.lastIndexOf("Orléans") != -1){
+            trajetLieux = document.querySelector('#price_sentence');
+            trajetLieux.innerHTML = "Prix moyen d'un trajet Paris/Orléans";
+            prixMoyen = document.querySelector('#price');
+            prixMoyen.innerHTML = "13 €";
+        }else{
+            prixMoyen = document.querySelector('#price');
+            prixMoyen.innerHTML = "? €";
+        }
     }
 );
 
-arrivalPointInput.addEventListener(
-    'keypress',
-    ()=>{
-        arrivalPointInput = document.querySelector('.startPoint'); 
-        arrivalPointInput.value = "Orléans";
-    }
-);
 if(sessionStorage.getItem("userTicketPrice")){
     alert("Vous avez déja acheté " 
             + sessionStorage.getItem("userTicketNumber") 
