@@ -81,22 +81,22 @@
                     <img id="road_img" src="assets/img/route.png" alt="Trajet"><br/>
                 </div>
                 
-                <input type="text" value="Paris" placeholder="Départ" class="startPoint">
-                <input type="text" value="Orléans" placeholder="Destination" style="margin-top:10px;" class="arrivalPoint">
+                <input type="text" placeholder="Départ" class="startPoint">
+                <input type="text" placeholder="Destination" style="margin-top:10px;" class="arrivalPoint">
 
                 <div class="grey_line"></div>
 
-                <span id="price_sentence">Prix moyen d'un trajet Paris/Orléans<span><br/>
-                <span id="price">13 €</span>
+                <span id="price_sentence">Prix moyen d'un trajet ?/?</span><br/>
+                <span><span id="price">?</span> €</span>
 
                 <div class="grey_line"></div>
 
                 Nombre de tickets désirés
 
                 <div class="row">
-                    <button class="trajectTicketNumber ticketNumber">5</button>
-                    <button class="trajectTicketNumber ticketNumber">10</button>
-                    <button class="trajectTicketNumber ticketNumber">20</button>
+                    <button id= "5" class="trajectTicketNumber ticketNumber" onClick="walletTicketNumberSelection(this.id)">5</button>
+                    <button id="10" class="trajectTicketNumber ticketNumber" onClick="walletTicketNumberSelection(this.id)">10</button>
+                    <button id= "20" class="trajectTicketNumber ticketNumber" onClick="walletTicketNumberSelection(this.id)">20</button>
                 </div>
 
                 <div class="grey_line"></div>
@@ -104,18 +104,18 @@
                 <div class="row">
                     <div class="col-3">
                         Récapitulatif<br/>
-                        <span class="blue_sky" style="border-bottom: 1px solid #EDEDED;">13 x ?</span><br/>
-                        <span class="blue_sky bold">?</span>
+                        <span class="blue_sky" style="border-bottom: 1px solid #EDEDED;"><span class="sauce10">?</span> € x <span class="sauce11">?</span></span><br/>
+                        <span class="blue_sky bold sauce12">?</span>
                     </div>
                     <div class="col-3">&nbsp</div>
                     <div class="col-6">Un seul de ces tickets permet d'effectuer n'importe quel trajet, à condition 
-                        que son prix soit de 13 € maximum
+                        que son prix soit de <span class="sauce13">?</span> € maximum
                     </div>
                 </div>
 
                 <div class="grey_line"></div>
 
-                <div class="center"><button class="blue_button">Acheter mes tickets</button></div>
+                <div class="center"><button class="blue_button cockButton" onClick="buyWalletTicketWorkingBetch()">Acheter mes tickets</button></div>
             </div>
 
             <div class="col-3">&nbsp</div>

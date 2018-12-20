@@ -5,6 +5,12 @@ let arrivalPointInput = document.querySelector('.arrivalPoint');
 let prixMoyen = document.querySelector('#price');
 let trajetLieux = document.querySelector('#price_sentence');
 
+let noPause = document.querySelector('.sauce13');
+let maybePause = document.querySelector('.sauce12');
+let yesPause = document.querySelector('.sauce11');
+let fuckYeahPause = document.querySelector('.sauce10');
+let jemLaiSocisse = document.querySelector(".cockButton");
+
 
 document.addEventListener(
     'keypress',
@@ -27,13 +33,23 @@ document.addEventListener(
             trajetLieux = document.querySelector('#price_sentence');
             trajetLieux.innerHTML = "Prix moyen d'un trajet Paris/Orléans";
             prixMoyen = document.querySelector('#price');
-            prixMoyen.innerHTML = "13 €";
+            prixMoyen.innerHTML = "13";
+            fuckYeahPause = document.querySelector('.sauce10');
+            fuckYeahPause.innerHTML = "13";
+            noPause = document.querySelector('.sauce13');
+            noPause.innerHTML = prixMoyen.innerHTML;
         }else{
             prixMoyen = document.querySelector('#price');
-            prixMoyen.innerHTML = "? €";
+            prixMoyen.innerHTML = "?";
+            noPause = document.querySelector('.sauce13');
+            noPause.innerHTML = prixMoyen.innerHTML;
+            fuckYeahPause = document.querySelector('.sauce10');
+            fuckYeahPause.innerHTML = "?";
         }
     }
 );
+
+
 
 if(sessionStorage.getItem("userTicketPrice")){
     alert("Vous avez déja acheté " 
@@ -50,6 +66,7 @@ function loadTrajectCase(){
     var mainContent = document.querySelector("#main");
     var trajectContent = document.querySelector("#trajectCase");
     mainContent.innerHTML = trajectContent.innerHTML;
+    // jemLaiSocisse.addEventListener("click", buyWalletTicketWorkingBetch);
 }
 
 document.querySelector("#walletButton").addEventListener("click", loadWalletCase);
@@ -64,6 +81,8 @@ function loadWalletCase(){
     document.querySelector("#morePriceButton").addEventListener("click", increaseTicketPrice);
     document.querySelector("#buyTicket").addEventListener("click", buyWalletTicket);
 }
+
+
 
 // Wallet JS
 // Click on less button for the prixe
@@ -121,8 +140,17 @@ function walletTicketNumberSelection(numberOfTicket){
 
     var walletPriceCalculation = document.querySelector("#walletPriceCalculation");
     var tickets = document.querySelector("#walletNumberCalculation");
+    yesPause = document.querySelector('.sauce11');
+    maybePause = document.querySelector('.sauce12');
 
     tickets.innerHTML = numberOfTicket;
+    yesPause.innerHTML = numberOfTicket;
+    if(startPointInput.value.lastIndexOf("Paris") != -1 && arrivalPointInput.value.lastIndexOf("Orléans") != -1){
+        maybePause.innerHTML = numberOfTicket*13;
+    }else{
+        maybePause.innerHTML = "?";
+    }
+    
 
     // Calculate final price
     if(walletPriceCalculation.innerHTML != "?" && tickets.innerHTML != "?"){
@@ -138,6 +166,19 @@ function buyWalletTicket(){
     if(document.querySelector("#totalWalletPrice").innerHTML != "?"){
         sessionStorage.setItem("userTicketNumber", parseInt(tickets.innerHTML));
         sessionStorage.setItem("userTicketPrice", parseInt(ticketPrice.innerHTML));
+    }else{
+        alert("Erreur lors de l'achat des tickets")
+    }
+}
+
+function buyWalletTicketWorkingBetch(){
+    console.log("Pute");
+    let maybePause = document.querySelector('.sauce12');
+    let yesPause = document.querySelector('.sauce11');
+
+    if(maybePause.innerHTML != "?"){
+        sessionStorage.setItem("userTicketNumber", parseInt(yesPause.innerHTML));
+        sessionStorage.setItem("userTicketPrice", 13);
     }else{
         alert("Erreur lors de l'achat des tickets")
     }
