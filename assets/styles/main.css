@@ -167,7 +167,7 @@ input{
     margin: 20px 0px 20px 0px;
 }
 
-.ticket_number{
+.walletTicketNumber{
     background-color: #fff;
     color: #00AFF5;
     text-decoration: none;
@@ -179,10 +179,18 @@ input{
     border: 1px solid rgb(190, 190, 190);
     margin-left:25px;
     margin-top:5px;
+    outline: none;
 }
 
-.ticket_number:hover{
+.walletTicketNumber:hover{
     cursor:pointer;
+    color: #fff;
+    background-color: #00AFF5;
+}
+
+.walletTicketNumber:focus {outline:0;}
+
+.walletTicketNumberSelected{
     color: #fff;
     background-color: #00AFF5;
 }
@@ -202,4 +210,22 @@ input{
     border:none;
     width:30px;
     height:30px;
+}
+
+#price_needed #lessPriceButton{
+    background: url("../img/minus.png") no-repeat;
+    background-size: 15px 15px;
+    cursor: pointer;
+    border:none;
+    width:15px;
+    height:15px;
+}
+
+#price_needed #morePriceButton{
+    background: url("../img/plus.png") no-repeat;
+    background-size: 15px 15px;
+    cursor: pointer;
+    border:none;
+    width:15px;
+    height:15px;
 }

@@ -133,7 +133,7 @@
 
                 <div class="row">
                     <div class="col-4 t2000 blue_sky"><button id="lessPriceButton" class="right"></button></div>
-                    <div class="col-4 center blue_sky t2000 bold"><span id="ticketPrice">00</span>,00€</div>
+                    <div class="col-4 center blue_sky t2000 bold"><span id="walletTicketPrice">00</span>,00€</div>
                     <div class="col-4 t2000 blue_sky"><button id="morePriceButton" class="left"></button></div>
                 </div>
 
@@ -142,9 +142,9 @@
                 Nombre de tickets désirés
 
                 <div class="row">
-                    <button class="ticket_number">5</button>
-                    <button class="ticket_number">10</button>
-                    <button class="ticket_number">20</button>
+                    <button id="5" class="walletTicketNumber" onClick="walletTicketNumberSelection(this.id)">5</button>
+                    <button id="10" class="walletTicketNumber" onClick="walletTicketNumberSelection(this.id)">10</button>
+                    <button id="20" class="walletTicketNumber" onClick="walletTicketNumberSelection(this.id)">20</button>
                 </div>
 
                 <div class="grey_line"></div>
@@ -152,18 +152,19 @@
                 <div class="row">
                     <div class="col-3">
                         Récapitulatif<br/>
-                        <span class="blue_sky" style="border-bottom: 1px solid #EDEDED;">? x ?</span><br/>
-                        <span class="blue_sky bold">?</span>
+                        <span class="blue_sky" style="border-bottom: 1px solid #EDEDED;">
+                            <span id="walletPriceCalculation">?</span> € x <span id="walletNumberCalculation">?</span></span><br/>
+                        <span class="blue_sky bold"><span id="totalWalletPrice">?</span> €</span>
                     </div>
                     <div class="col-3">&nbsp</div>
                     <div class="col-6">Un seul de ces tickets permet d'effectuer n'importe quel trajet, à condition 
-                        que son prix soit de ? € maximum
+                        que son prix soit de <span id="maxWalletPrice">? </span>€ maximum
                     </div>
                 </div>
 
                 <div class="grey_line"></div>
 
-                <div class="center"><button class="blue_button">Acheter mes tickets</button></div>
+                <div class="center"><button id="buyTicket" class="blue_button">Acheter mes tickets</button></div>
             </div>
 
             <div class="col-3">&nbsp</div>
