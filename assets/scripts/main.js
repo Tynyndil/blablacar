@@ -10,7 +10,7 @@ let maybePause = document.querySelector('.sauce12');
 let yesPause = document.querySelector('.sauce11');
 let fuckYeahPause = document.querySelector('.sauce10');
 let jemLaiSocisse = document.querySelector(".cockButton");
-let myTraject = document.querySelector(".lookForPassenger");
+let myTraject = document.querySelector("#trajectMap");
 
 
 document.addEventListener(
@@ -67,6 +67,18 @@ function loadTrajectCase(){
     var mainContent = document.querySelector("#main");
     var trajectContent = document.querySelector("#trajectCase");
     mainContent.innerHTML = trajectContent.innerHTML;
+    // jemLaiSocisse.addEventListener("click", buyWalletTicketWorkingBetch);
+}
+
+function proposeTraject(){
+    var mainContent = document.querySelector("#main");
+    myTraject = document.querySelector("#trajectMap");
+    console.log(myTraject);
+    mainContent.innerHTML = myTraject.innerHTML;
+    if(parseInt(sessionStorage.getItem("userTicketNumber")) > 0){
+        mapOnScreen = document.querySelector('.mapContainer');
+        mapOnScreen.style.background = 'url("../img/mapBuy.png") no-repeat;';
+    }
     // jemLaiSocisse.addEventListener("click", buyWalletTicketWorkingBetch);
 }
 
