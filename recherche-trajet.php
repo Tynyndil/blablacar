@@ -39,7 +39,7 @@
         </div>
 
         <div class="col-6" style="margin-top:20px;">
-        <input type="text" value="Paris,centre -> Orléans,centre" class="blablaInput">
+        <input type="text" value="Maçon,centre -> Lyon,centre" class="blablaInput">
         <div class="right" style="margin-top:10px;"><a href="demande-trajet.php"><button class="blue_button">Transformer ma demande en annonce</button></a></div>
         <div class="clear30"></div>
 
@@ -50,7 +50,7 @@
                             <div class="infosDepart">
                                 <div class="heureDepart">10:00</div>
                                 <div class="lieuDepart">
-                                    <span class="villeDepart">Paris</span>
+                                    <span class="villeDepart">Maçon</span>
                                     <div class="proximiteDepart">
                                         <div class="iconeDepart">
                                             <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" 
@@ -75,7 +75,7 @@
                         <div class="infosArrive">
                             <div class="heureArrive">12:00</div>
                             <div class="lieuArrive">
-                                <span class="villeArrive">Orléans</span>
+                                <span class="villeArrive">Lyon</span>
                                 <div class="proximiteArrive">
                                     <div class="iconeArrive">
                                         <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" 
@@ -118,7 +118,7 @@
                             <div class="infosDepart">
                                 <div class="heureDepart">10:30</div>
                                 <div class="lieuDepart">
-                                    <span class="villeDepart">Paris</span>
+                                    <span class="villeDepart">Maçon</span>
                                     <div class="proximiteDepart">
                                         <div class="iconeDepart">
                                             <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" 
@@ -143,7 +143,7 @@
                         <div class="infosArrive">
                             <div class="heureArrive">13:00</div>
                             <div class="lieuArrive">
-                                <span class="villeArrive">Orléans</span>
+                                <span class="villeArrive">Lyon</span>
                                 <div class="proximiteArrive">
                                     <div class="iconeArrive">
                                         <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" 
@@ -183,7 +183,7 @@
                             <div class="infosDepart">
                                 <div class="heureDepart">11:00</div>
                                 <div class="lieuDepart">
-                                    <span class="villeDepart">Paris</span>
+                                    <span class="villeDepart">Maçon</span>
                                     <div class="proximiteDepart">
                                         <div class="iconeDepart">
                                             <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" 
@@ -208,7 +208,7 @@
                         <div class="infosArrive">
                             <div class="heureArrive">13:00</div>
                             <div class="lieuArrive">
-                                <span class="villeArrive">Orléans</span>
+                                <span class="villeArrive">Lyon</span>
                                 <div class="proximiteArrive">
                                     <div class="iconeArrive">
                                         <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" 
@@ -251,7 +251,7 @@
                             <div class="infosDepart">
                                 <div class="heureDepart">14:00</div>
                                 <div class="lieuDepart">
-                                    <span class="villeDepart">Paris</span>
+                                    <span class="villeDepart">Maçon</span>
                                     <div class="proximiteDepart">
                                         <div class="iconeDepart">
                                             <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" 
@@ -276,7 +276,7 @@
                         <div class="infosArrive">
                             <div class="heureArrive">15:30</div>
                             <div class="lieuArrive">
-                                <span class="villeArrive">Orléans</span>
+                                <span class="villeArrive">Lyon</span>
                                 <div class="proximiteArrive">
                                     <div class="iconeArrive">
                                         <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" 
