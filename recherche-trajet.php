@@ -105,9 +105,9 @@
                 <div>
                     <img src="https://cdn.blablacar.com/comuto3/images/avatar/passenger-m.svg" class="userImage">
                     <span>Thierry</span>
-                    <img class="imageBadge" src="assets/img/asDuVolant.png" alt="">
-                    <img class="imageBadge" src="assets/img/mPropre.png" alt="">
-                    <img class="imageBadge" src="assets/img/confort.png" alt="">
+                    <img class="imageBadge" title="As du volant" src="assets/img/asDuVolant.png" alt="">
+                    <img class="imageBadge" title="M. Propre" src="assets/img/mPropre.png" alt="">
+                    <img class="imageBadge" title="Confort" src="assets/img/confort.png" alt="">
                 </div>
             </div>
 
@@ -166,12 +166,14 @@
                     </ul>
 
                     <div>
-                        <span class="green prixAnnonce">14.00€</span><br/><br/><br/>
+                        <span class="prixAnnonce">14.00€</span><br/><br/><br/>
+                        <img class="carImage" src="assets/img/voitureHandicape.svg" title="Voiture accesible aux PMR" alt="Voiture accesible aux PMR">
                     </div>
                 </div>
                 <div>
                     <img src="https://cdn.blablacar.com/comuto3/images/avatar/passenger-m.svg" class="userImage">
                     <span>Marine</span>
+                        <img class="imageBadge" title="As du volant" src="assets/img/asDuVolant.png" alt="">
                 </div>
             </div>
             <div class="annonce">

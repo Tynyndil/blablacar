@@ -171,14 +171,9 @@
         </div>
 
         <div class="row" id="trajectMap" style="display:none;">
-            
-        <div class="col-1">&nbsp</div>
-            <div class="col-10">
+            <div class="col-12">
                 <div class="mapContainer"></div>
             </div>
-        <div class="col-1">&nbsp</div>
-
-
         </div>
         <div class="clear50"></div>
 
