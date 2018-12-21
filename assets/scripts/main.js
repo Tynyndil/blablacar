@@ -73,7 +73,6 @@ function loadTrajectCase(){
 function proposeTraject(){
     var mainContent = document.querySelector("#main");
     myTraject = document.querySelector("#trajectMap");
-    console.log(myTraject);
     mainContent.innerHTML = myTraject.innerHTML;
     if(parseInt(sessionStorage.getItem("userTicketNumber")) > 0){
         console.log("meem");
@@ -188,7 +187,6 @@ function buyWalletTicket(){
 }
 
 function buyWalletTicketWorkingBetch(){
-    console.log("Pute");
     let maybePause = document.querySelector('.sauce12');
     let yesPause = document.querySelector('.sauce11');
 
