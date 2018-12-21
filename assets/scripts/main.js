@@ -57,8 +57,6 @@ if(sessionStorage.getItem("userTicketPrice")){
             + sessionStorage.getItem("userTicketNumber") 
             + " tickets d'une valeur de " 
             + sessionStorage.getItem("userTicketPrice") + " €, clear du sessionStorage");
-
-    sessionStorage.clear();
 }
 
 document.querySelector("#trajectButton").addEventListener("click", loadTrajectCase);
