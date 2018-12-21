@@ -76,8 +76,11 @@ function proposeTraject(){
     console.log(myTraject);
     mainContent.innerHTML = myTraject.innerHTML;
     if(parseInt(sessionStorage.getItem("userTicketNumber")) > 0){
+        console.log("meem");
         mapOnScreen = document.querySelector('.mapContainer');
-        mapOnScreen.style.background = 'url("../img/mapBuy.png") no-repeat;';
+        mapOnScreen.classList.toggle("mapContainer");
+        mapOnScreen.classList.toggle("jeanAymare");
+        // mapOnScreen.style.background = 'url("../img/mapBuy.png") no-repeat;';
     }
     // jemLaiSocisse.addEventListener("click", buyWalletTicketWorkingBetch);
 }

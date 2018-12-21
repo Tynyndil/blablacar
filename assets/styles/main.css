@@ -407,6 +407,9 @@ a:hover{
     width: 100%;
 }
 
-.mapContainer .jeanAymare{
+.jeanAymare{
     background: url("../img/mapBuy.png") no-repeat;
+    background-size: 100%;
+    height: 500px;
+    width: 100%;
 }
