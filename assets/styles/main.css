@@ -22,45 +22,13 @@
     margin-bottom:0;
 }
 
-.majuscule{
+.maj{
     text-transform: uppercase;
-}
+}    
 
-.show_mobile{
-    display: none;
+.bold{
+    font-weight: 700;
 }
-
-.hide_mobile{
-    display: block;
-}
-
-.show_mobile_2x{
-    display: none;
-}
-
-.hide_mobile_2x{
-    display: block;
-}
-
-.hide_all_mobiles{
-    display: block;
-}
-
-.no_wrap{
-    white-space:nowrap;
-}
-
-.inline{
-    display: inline;
-}
-
-.fill_screen{
-    height: 100%;
-    position: absolute;
-    right: 0;
-    left: 0;
-}
-    
 
 /*** TAILLE FONT ***/
 .t0533 { font-size: 0.533em; } /* 6px */
@@ -102,7 +70,25 @@
 .clear200 { height: 200px; }
 
 /* COLORS */
+.green{
+    color: #054752!important;
+}
 
+.blue_sky{
+    color: #00AFF5;
+}
+
+.backgroundGrey{
+    -webkit-appearance: none;
+    border:0;
+    border-radius: 16px;
+    background-color: #EDEDED;
+    color: #054752;
+    flex: 1;
+    padding: 16px;
+    margin-right: 48px;
+    width:100%
+}
 
 /* MAIN */
 html{
@@ -125,9 +111,11 @@ a:hover{
 
 .page{
     background-color: white;
-    width:990px;
+    width:1080px;
     margin: 0 auto;
     position: relative;
+    border-right:1px solid #ddd;
+    border-left:1px solid #ddd;
 }
 
 #header{
@@ -140,4 +128,274 @@ a:hover{
 #head_image img{
     height: 32px;
     width: 162px;
+}
+
+.blue_button{
+    background-color: #00AFF5;
+    text-decoration: none;
+    text-align: center;
+    line-height: 16px;
+    color: #fff;
+    padding: 10px 15px;
+    height: 36px;
+    display: inline-block;
+    border-radius: 3px;
+    border: 0;
+    box-shadow: inset 0 -2px rgba(5,71,82,0.2);
+}
+
+.blue_button:hover{
+    cursor: pointer;
+}
+
+#road_img{
+    height:auto;
+    width: auto;
+    margin-top:25px;
+    margin-bottom: 25px;
+}
+
+#wallet_img{
+    height:auto;
+    width: auto;
+    margin-top:25px;
+    margin-bottom: 25px;
+}
+
+.blablaInput{
+    -webkit-appearance: none;
+    border:0;
+    border-radius: 16px;
+    background-color: #EDEDED;
+    color: #054752;
+    flex: 1;
+    padding: 16px 0px 16px 16px;
+    margin-right: 48px;
+    width:100%
+}
+
+.grey_line{
+    border-bottom: 2px solid #EDEDED;
+    margin: 20px 0px 20px 0px;
+}
+
+.ticketNumber{
+    background-color: #fff;
+    color: #00AFF5;
+    text-decoration: none;
+    text-align: center;
+    height: 26px;
+    width:45px;
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid rgb(190, 190, 190);
+    margin-left:25px;
+    margin-top:5px;
+    outline: none;
+}
+
+.ticketNumber:hover{
+    cursor:pointer;
+    color: #fff;
+    background-color: #00AFF5;
+}
+
+.ticketNumber:focus {outline:0;}
+
+.ticketNumberSelected{
+    color: #fff;
+    background-color: #00AFF5;
+}
+
+#lessPriceButton{
+    background: url("../img/minus.png") no-repeat;
+    cursor: pointer;
+    border:none;
+    width:30px;
+    height:30px;
+}
+
+
+#morePriceButton{
+    background: url("../img/plus.png") no-repeat;
+    cursor: pointer;
+    border:none;
+    width:30px;
+    height:30px;
+}
+
+#price_needed #lessPriceButton{
+    background: url("../img/minus.png") no-repeat;
+    background-size: 15px 15px;
+    cursor: pointer;
+    border:none;
+    width:15px;
+    height:15px;
+}
+
+#price_needed #morePriceButton{
+    background: url("../img/plus.png") no-repeat;
+    background-size: 15px 15px;
+    cursor: pointer;
+    border:none;
+    width:15px;
+    height:15px;
+}
+
+/* les Annonces */
+
+.annonce{
+    border: 1px solid #DDD;
+    border-radius: 16px;
+    list-style-type: none;
+    display: block;
+    padding: 16px;
+    margin-bottom:20px;
+}
+
+.userImage{
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    object-fit:cover;
+}
+
+.contenuAnnonce{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contenuAnnonce ul{
+    flex: 1;
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+.prixAnnonce{
+    color: #5DD167;
+}
+
+.contenuAnnonce li{
+    position: relative;
+    list-style-type: none;
+}
+
+.infosDepart,.infosArrive{
+    display: flex;
+    padding: 8px 0;
+    width: 100%;
+}
+
+.heureDepart,.heureArrive{
+    min-width:64px;
+    color: #054752;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.lieuDepart,.lieuArrive{
+    flex:1;
+    padding-left:16px;
+}
+
+.villeDepart,.villeArrive{
+    color: #054752;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.lieuDepart::before{
+    height:calc(100% - calc(6px + 8px));
+    top: calc(6px + 8px);
+    background-color: #054752;
+    left:64px;
+    content: ' ';
+    display: block;
+    width: 4px;
+    position: absolute;
+    z-index:1;
+}
+
+.lieuArrive::before{
+    height:calc(6px + 8px);
+    top:0;
+    background-color: #054752;
+    left:64px;
+    content: ' ';
+    display: block;
+    width: 4px;
+    position: absolute;
+    z-index:1;
+}
+
+.proximiteDepart::before{
+    height:calc(100% - calc(6px + 8px));
+    top: calc(6px + 8px);
+    background-color: #054752;
+    left:64px;
+    content: ' ';
+    display: block;
+    width: 4px;
+    position: absolute;
+    z-index:1;
+}
+
+.proximiteArrive::before{
+    height:calc(6px + 8px);
+    top:0;
+    background-color: #054752;
+    left:64px;
+    content: ' ';
+    display: block;
+    width: 4px;
+    position: absolute;
+    z-index:1;
+}
+
+.infosDepart::after{
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border: 2px solid #054752;
+    border-radius: 50%;
+    top: calc(4px + 8px);
+    left: calc(64px - 2px);
+    content: ' ';
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.infosArrive::after{
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border: 2px solid #054752;
+    border-radius: 50%;
+    top: calc(4px + 8px);
+    left: calc(64px - 2px);
+    content: ' ';
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.iconeProximite{
+    margin-top:4px;
+}
+
+.carImage{
+    height:50px;
+    width:50px;
+    float:right;
+}
+
+.imageBadge{
+    height:40px;
+    width:40px;
+    float:right;
+    margin:5px;
 }
