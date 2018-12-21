@@ -170,6 +170,16 @@
             <div class="col-3">&nbsp</div>
         </div>
 
+        <div class="row" id="trajectMap" style="display:none;">
+            <div class="col-3">&nbsp</div>
+
+            <div class="col-6">
+                <div class="mapContainer"></div>
+            </div>
+
+
+        </div>
+
         <div class="clear50"></div>
 
     </div>

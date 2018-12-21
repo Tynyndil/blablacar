@@ -256,3 +256,9 @@ a:hover{
     height: 48px;
     object-fit:cover;
 }
+
+.mapContainer{
+    width: 480px;
+    height: 480px;
+    background: url("../img/map.png") no-repeat;
+}

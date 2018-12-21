@@ -10,6 +10,7 @@ let maybePause = document.querySelector('.sauce12');
 let yesPause = document.querySelector('.sauce11');
 let fuckYeahPause = document.querySelector('.sauce10');
 let jemLaiSocisse = document.querySelector(".cockButton");
+let myTraject = document.querySelector(".lookForPassenger");
 
 
 document.addEventListener(
