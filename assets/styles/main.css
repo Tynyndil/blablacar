@@ -71,7 +71,7 @@
 
 /* COLORS */
 .green{
-    color: #054752;
+    color: #054752!important;
 }
 
 .blue_sky{
@@ -242,12 +242,15 @@ a:hover{
     height:15px;
 }
 
+/* les Annonces */
+
 .annonce{
     border: 1px solid #DDD;
     border-radius: 16px;
     list-style-type: none;
     display: block;
     padding: 16px;
+    margin-bottom:20px;
 }
 
 .userImage{
@@ -257,8 +260,142 @@ a:hover{
     object-fit:cover;
 }
 
-.mapContainer{
-    width: 480px;
-    height: 480px;
-    background: url("../img/map.png") no-repeat;
+.contenuAnnonce{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contenuAnnonce ul{
+    flex: 1;
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+.prixAnnonce{
+    color: #5DD167;
+}
+
+.contenuAnnonce li{
+    position: relative;
+    list-style-type: none;
+}
+
+.infosDepart,.infosArrive{
+    display: flex;
+    padding: 8px 0;
+    width: 100%;
+}
+
+.heureDepart,.heureArrive{
+    min-width:64px;
+    color: #054752;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.lieuDepart,.lieuArrive{
+    flex:1;
+    padding-left:16px;
+}
+
+.villeDepart,.villeArrive{
+    color: #054752;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.lieuDepart::before{
+    height:calc(100% - calc(6px + 8px));
+    top: calc(6px + 8px);
+    background-color: #054752;
+    left:64px;
+    content: ' ';
+    display: block;
+    width: 4px;
+    position: absolute;
+    z-index:1;
+}
+
+.lieuArrive::before{
+    height:calc(6px + 8px);
+    top:0;
+    background-color: #054752;
+    left:64px;
+    content: ' ';
+    display: block;
+    width: 4px;
+    position: absolute;
+    z-index:1;
+}
+
+.proximiteDepart::before{
+    height:calc(100% - calc(6px + 8px));
+    top: calc(6px + 8px);
+    background-color: #054752;
+    left:64px;
+    content: ' ';
+    display: block;
+    width: 4px;
+    position: absolute;
+    z-index:1;
+}
+
+.proximiteArrive::before{
+    height:calc(6px + 8px);
+    top:0;
+    background-color: #054752;
+    left:64px;
+    content: ' ';
+    display: block;
+    width: 4px;
+    position: absolute;
+    z-index:1;
+}
+
+.infosDepart::after{
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border: 2px solid #054752;
+    border-radius: 50%;
+    top: calc(4px + 8px);
+    left: calc(64px - 2px);
+    content: ' ';
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.infosArrive::after{
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border: 2px solid #054752;
+    border-radius: 50%;
+    top: calc(4px + 8px);
+    left: calc(64px - 2px);
+    content: ' ';
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.iconeProximite{
+    margin-top:4px;
+}
+
+.carImage{
+    height:50px;
+    width:50px;
+    float:right;
+}
+
+.imageBadge{
+    height:40px;
+    width:40px;
+    float:right;
+    margin:5px;
 }

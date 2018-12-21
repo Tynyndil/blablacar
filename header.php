@@ -25,7 +25,7 @@
                 <div class="col-2 blue_sky">
                     <a href="recherche-trajet.php">Rechercher</a>
                 </div>
-                <div class="col-2 blue_sky lookForPassenger">
+                <div class="col-2 blue_sky">
                     <a href="#">Proposer un trajet</a>
                 </div>
                 <div class="col-2 blue_sky">
